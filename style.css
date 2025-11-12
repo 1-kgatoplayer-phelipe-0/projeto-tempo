@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
 }
 
 body {
@@ -10,33 +10,30 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(red, green, blue, alpha);
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.container{
-
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    background: linear-gradient( 135deg, #00feba, #5d548a) ;
+    background: linear-gradient( 135deg, #00feba, #5b548a );
     height: 450px;
     width: 400px;
     border-radius: 15px;
 }
 
 h1 {
-    color: #FFF;
+    color: #fff;
     margin: 20px 0;
 }
 
 .busca {
 
-    padding: 35px;
+    padding-top: 35px;
     display: flex;
     width: 300px;
-
 }
 .busca #searchInput {
     flex: 1;
@@ -45,7 +42,7 @@ h1 {
     font-size: 15px;
     border-radius: 50px;
     border: 0;
-    margin: 10px;
+    margin-right: 10px;
 }
 
 .busca img{
@@ -56,7 +53,7 @@ h1 {
     align-items: center;
     justify-content: center;
     border: 0;
-    background-color: #FFF;;
+    background-color: #fff;
     border-radius: 50%;
     width: 45px;
     cursor: pointer;
@@ -88,6 +85,7 @@ h1 {
     height: 300px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -99,30 +97,30 @@ h1 {
 }
 
 .temperatura{
-     margin: 10px;
+    margin: 10px;
     color: #FFF;
     font-size: 35px;
     font-weight: bold;
 }
 
-.info {
-    justify-content: space-between;
-    display: flex;
-    width: 100%;
+.Info {
+justify-content: space-between;
+display: flex;
+width: 100%;
 }
 
-.info .temp {
+.info.temp {
     flex: 1;
     text-align: center;
 }
 
-.info .vento {
+.info.vento {
     flex: 1;
     text-align: center;
 }
 
 .ventoTitulo {
-    color: yellowgreen;
+    color: #4f4f52;
     font-size: 16px;
     margin-bottom: 5px;
     font-weight: bold;
@@ -131,8 +129,8 @@ h1 {
 .tempInfo,
 .ventoInfo {
     margin: 15px;
-    color: black;
-    font-size: 5px;
+    color: #FFF;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -144,9 +142,9 @@ h1 {
     font-size: 15px;
     font-weight: normal;
 }
-
+   
 .ventoInfo span {
-
+    
     font-size: 15px;
     font-weight: normal;
 }
@@ -161,18 +159,18 @@ h1 {
     padding-left: 25px;
     padding-top: 25px;
 }
-
+    
 .ventoPonto {
     width: 15px;
     height: 1px;
     background-color: #FFF;
     transform-origin: left;
 }
-
+ 
 .aviso {
     margin-top: 100px;
     color: #FFF;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 footer {
