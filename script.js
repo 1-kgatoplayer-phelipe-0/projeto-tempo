@@ -17,7 +17,7 @@ document.querySelector('.busca').addEventListener('submit', async (event)=>{
                 temp: json.main.temp,
                 tempIcon: json.weather[0].icon,
                 windSpeed: json.wind.speed,
-                 desc: json.weather[0].description,
+                desc: json.weather[0].description,
             }
             );
         } 
@@ -34,8 +34,8 @@ function showInfo(json){
     document.querySelector('.resultado').style.display = 'block';
     document.querySelector('.titulo').innerHTML = `${json.name}, ${json.country}`;
     document.querySelector('.temperatura').innerHTML = `${json.temp} <sup>ºC</sup>`;
-    document.querySelector('.ventoinfo').innerHTML = `${json.windSpeed} <span>km/h</span>`;
-    document.querySelector('.tempinfo').innerHTML = `${json.desc}`;
+    document.querySelector('.ventoInfo').innerHTML = `${json.windSpeed} <span>km/h</span>`;
+    document.querySelector('.tempInfo').innerHTML = `${json.desc}`;
     document.querySelector('.informacoes img').setAttribute('src', `./img/${json.tempIcon}.gif`)
 }
     function showWarning(msg)
@@ -43,8 +43,8 @@ function showInfo(json){
     document.querySelector('.aviso').innerHTML = msg;
 }
 function clearInfo(){
-    showWarning('')
-    document.querySelector('.result').style.display = 'none';
+    showWarning('');
+    document.querySelector('.resultado').style.display = 'none';
 }
  async function curitiba(){
     let input = 'Curitiba'
