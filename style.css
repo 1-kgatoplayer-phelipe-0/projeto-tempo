@@ -179,3 +179,92 @@ footer {
     color: #FFF;
     font-size: 13px;
 }
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(120deg, #001331, #00224e, #003a71, #001331);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 12s ease infinite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.ventoInfo {
+    margin-right: 25px;
+}.ventoTitulo {
+    margin-left: 20px;  
+}
+.tempInfo {
+    font-size: 20px;    
+    margin-left: 20px;   
+}.tempTitulo {
+    font-size: 20px;   
+    margin-left: 20px; 
+    font-weight: bold; 
+}
+.container {
+    box-shadow: 0 0 20px #ff0033aa;
+}
+.resultado {
+    animation: fade 0.5s ease;
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.informacoes img {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+.busca button {
+    transition: 0.2s;
+}
+
+.busca button:hover {
+    transform: scale(1.1);
+}
+body {
+    background: linear-gradient(120deg, #1a0e14, #30061a, #1a0e14);
+    background-size: 200% 200%;
+    animation: bgmove 10s ease infinite;
+}
+
+@keyframes bgmove {
+    0% { background-position: 0 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+}
+.ventoPonto {
+    animation: girar 2s linear infinite;
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+.container {
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.4);
+}body {
+    background: url("./img/Wallpaper\ Animado\ Pc\ Gif.gif") no-repeat center center fixed;
+    background-size: cover;
+}
+footer a {
+    color: #ff0000ad;
+}footer a {
+    font-size: 24px; 
+    color: #ff0000c5;  
+}
